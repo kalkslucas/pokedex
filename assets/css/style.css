@@ -2,6 +2,7 @@
 
 *{
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -25,11 +26,18 @@ body {
 }
 
 .content .pokemons-list li {
+  display: flex;
+  flex-direction: column;
   margin: 0.5rem;
-  padding: 2rem 1rem;
+  padding: 1rem;
   background-color: #14a06f;
   color: white;
   font-weight: bold;
   border-radius: 1rem;
-  height: 120px;
+}
+
+.pokemons-list li img {
+  width: 100%;
+  max-height: 110px;
+  align-self: flex-end;
 }
