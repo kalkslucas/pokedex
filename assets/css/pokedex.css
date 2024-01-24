@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 335px) {
+@media screen and (min-width: 380px) {
   .pokemons-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -17,7 +17,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 
 @media screen and (min-width: 992px) {
   .pokemons-list {
