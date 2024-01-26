@@ -1,4 +1,4 @@
-.pokemons-list {
+#pokemons-list {
   display: grid;
   grid-template-columns: 1fr;
   list-style: none;
@@ -7,19 +7,19 @@
 }
 
 @media screen and (min-width: 380px) {
-  .pokemons-list {
+  #pokemons-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 576px) {
-  .pokemons-list {
+  #pokemons-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .pokemons-list {
+  #pokemons-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
