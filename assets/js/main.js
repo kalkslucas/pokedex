@@ -1,10 +1,3 @@
-//Variáveis
-const offset = 0
-const limit = 10
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`//Link da API buscando pokemons até o limite definido
-let pokemonsList = document.querySelector("#pokemons-list")
-
-/*Função que cria o elemento LI dos pokemóns*/
 function convertPokemonToLi(pokemon) {
   return `
   <li class="pokemon-item">
@@ -21,22 +14,12 @@ function convertPokemonToLi(pokemon) {
   `
 }
 
-fetch(url)//Função FETCH API
-  .then((res) => res.json())//Resposta do Fetch API em cima da URL do Pokeapi
-  .then((jsonBody) => jsonBody.results)//Conversão do responseBody para json
+const pokemonsList = document.querySelector("#pokemons-list")
+
+pokeApi.getPokemons()
   .then((pokemonJsonBody = []) => {//Lista de pokemon trazido pelo responseBody
     console.log(pokemonJsonBody);
     pokemonsList.innerHTML += pokemonJsonBody.map(convertPokemonToLi).join('')//Para imprimir a lista de pokemom em HTML, a função map pegará o jsonBody, mapeará o valor com base na função da formatação Li e fará a junção sem nenhum separador
   })
   .catch((err) => console.log(err))
   .finally(() => console.log("Requisição concluída!"))
-
-
-Promise.all([
-  fetch(`https://pokeapi.co/api/v2/pokemon/1`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/2`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/3`),
-  fetch(`https://pokeapi.co/api/v2/pokemon/4`)
-]).then((results) =>{
-  console.log(results);
-})
