@@ -29,7 +29,6 @@
   flex-direction: column;
   margin: 0.5rem;
   padding: 0.7rem;
-  background-color: #49d0b0;
   color: white;
   font-weight: bold;
   border-radius: 1rem;
@@ -46,6 +45,7 @@
 .pokemon-item .name {
   color: white;
   margin-bottom: 0.25rem;
+  text-transform: capitalize;
 }
 
 .pokemon-item .detail {
@@ -62,15 +62,30 @@
 }
 
 .type-item {
-  background-color: #61e1ca;
   color: white;
   padding: 0.25rem 0.5rem;
   font-size: 0.625rem;
   margin: 0.125rem 0;
   border-radius: 1rem;
+  filter: brightness(1.1);
 }
 
 .pokemon-item .detail img {
   max-width: 100%;
   height: 70px;
 }
+
+.grass {
+  background-color: #49d0b0;
+}
+.fire {
+  background-color: #ce1e1e;
+}
+.water {
+  background-color: #22aeb3;
+}
+.bug {
+  background-color: #b3b019;
+}
+
+/*https://aminoapps.com/c/pokemon/page/blog/my-favorite-pokemon-of-every-type/lbhQ_uD6znGpPX788kRmJvvG4vEDog*/

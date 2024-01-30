@@ -1,6 +1,6 @@
 function convertPokemonToLi(pokemon) {
   return `
-  <li class="pokemon-item">
+  <li class="pokemon-item ${pokemon.mainType}">
     <span class="number">#${pokemon.order}</span>
     <span class="name">${pokemon.name}</span>
     <div class="detail">

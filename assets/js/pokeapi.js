@@ -6,11 +6,11 @@ function convertPokeApiDetailToPokemon(pokeDetail){
   pokemon.order = pokeDetail.order
 
   const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
-  const {mainType} = types 
-
-  pokemon.mainType = mainType
-  pokemon.types = types
+  const type = types[0] 
   
+  pokemon.types = types
+  pokemon.mainType = type
+
   pokemon.sprite = pokeDetail.sprites.other.dream_world.front_default
 
   return pokemon
@@ -22,7 +22,7 @@ pokeApi.getPokemonDetail = (pokemon) => {
           .then(convertPokeApiDetailToPokemon)
 }
 
-pokeApi.getPokemons = (offset = 0, limit = 10) => {
+pokeApi.getPokemons = (offset = 0, limit = 15) => {
   const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`//Link da API buscando pokemons até o limite definido
 
   return fetch(url)//Função FETCH API
