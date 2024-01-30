@@ -12,6 +12,6 @@ pokeApi.getPokemons = (offset = 0, limit = 10) => {
   .then((res) => res.json())//Resposta do Fetch API em cima da URL do Pokeapi em Json
   .then((jsonBody) => jsonBody.results)//Resultado da lista JSON
   .then((pokemons) => pokemons.map(pokeApi.getPokemonDetail))//Mapeamento da lista de pokemons por requisição, buscando detalhes dos pokemons 
-  .then((detailRequests) => Promise.all(detailRequests))//Retorno de todos os detalhes dos pokemons via requisição
-  .then((pokemonsDetails) => (pokemonsDetails))
+  .then((detailRequests) => Promise.all(detailRequests))//Requisitando todas as URLs dos pokemons da lista
+  .then((pokemonsDetails) => (pokemonsDetails))//Retorno de todos os detalhes dos pokemons via requisição
 }
