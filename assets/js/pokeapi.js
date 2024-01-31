@@ -22,13 +22,8 @@ pokeApi.getPokemonDetail = (pokemon) => {
     .then(convertPokeApiDetailToPokemon);
 };
 
-pokeApi.getPokemons = (offset = 0, limit = 15) => {
+pokeApi.getPokemons = (offset = 0, limit = 10) => {
   const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`; //Link da API buscando pokemons até o limite definido
-
-  const loadMoreButton = document.querySelector("#loadMoreButton")
-  loadMoreButton.addEventListener('click', () => {
-    limit += 5
-  })
 
   return fetch(url) //Função FETCH API
     .then((res) => res.json()) //Resposta do Fetch API em cima da URL do Pokeapi em Json
