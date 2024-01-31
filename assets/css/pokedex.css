@@ -116,4 +116,22 @@
 .legend {background-color: #CA7FDC;}
 .legend .type-item {background-color: #b770c9;}
 
+#pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+#loadMoreButton {
+  background-color: #6c79db;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
 /*https://aminoapps.com/c/pokemon/page/blog/my-favorite-pokemon-of-every-type/lbhQ_uD6znGpPX788kRmJvvG4vEDog*/
