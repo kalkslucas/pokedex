@@ -32,7 +32,6 @@
   color: white;
   font-weight: bold;
   border-radius: 1rem;
-
 }
 
 .pokemon-item .number {
@@ -75,17 +74,26 @@
   height: 70px;
 }
 
-.grass {
-  background-color: #49d0b0;
-}
-.fire {
-  background-color: #ce1e1e;
-}
-.water {
-  background-color: #22aeb3;
-}
-.bug {
-  background-color: #b3b019;
-}
+.normal {background-color: #CBC7BE;}
+.fire {background-color: #FFC39F;}
+.grass {background-color: #BDDEB1;}
+.water {background-color: #B1D6DE;}
+.bug {background-color: #D8DC7E;}
+.electric {background-color: #FDDC99;}
+.ice {background-color: #C3EAE5;}
+.fighting {background-color: #C09491;}
+.poison {background-color: #CA7FDC;}
+.ground {background-color: #CDC0B7;}
+.flying {background-color: #C7CCE2;}
+.psychic {background-color: #EB96AD;}
+.rock {background-color: #C8CBC4;}
+.ghost {background-color: #D8C3E4;}
+.dragon {background-color: #AC9DDE;}
+.dark {background-color: #A59B99;}
+.steel {background-color: #C4C9CD;}
+.fairy {background-color: #F5CCDE;}
+.starter {background-color: #BAE0C9;}
+.gimmick {background-color: #8ED0E0;}
+.legend {background-color: #CA7FDC;}
 
 /*https://aminoapps.com/c/pokemon/page/blog/my-favorite-pokemon-of-every-type/lbhQ_uD6znGpPX788kRmJvvG4vEDog*/
