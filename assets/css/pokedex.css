@@ -66,7 +66,6 @@
   font-size: 0.625rem;
   margin: 0.125rem 0;
   border-radius: 1rem;
-  filter: brightness(1.1);
 }
 
 .pokemon-item .detail img {
@@ -75,25 +74,46 @@
 }
 
 .normal {background-color: #CBC7BE;}
+.normal .type-item {background-color: #a3a09a;}
 .fire {background-color: #FFC39F;}
+.fire .type-item {background-color: #ce9979;}
 .grass {background-color: #BDDEB1;}
+.grass .type-item {background-color: #9ec092;}
 .water {background-color: #B1D6DE;}
+.water .type-item {background-color: #87acb4;}
 .bug {background-color: #D8DC7E;}
+.bug .type-item {background-color: #abaf5f;}
 .electric {background-color: #FDDC99;}
+.electric .type-item {background-color: #d1b377;}
 .ice {background-color: #C3EAE5;}
+.ice .type-item {background-color: #97c7c1;}
 .fighting {background-color: #C09491;}
+.fighting .type-item {background-color: #C09491;}
 .poison {background-color: #CA7FDC;}
+.poison .type-item {background-color: #ac68bd;}
 .ground {background-color: #CDC0B7;}
+.ground .type-item {background-color: #bbab9f;}
 .flying {background-color: #C7CCE2;}
+.flying .type-item {background-color: #9fa5c0;}
 .psychic {background-color: #EB96AD;}
+.psychic .type-item {background-color: #d37a92;}
 .rock {background-color: #C8CBC4;}
+.rock .type-item {background-color: #a4aa9c;}
 .ghost {background-color: #D8C3E4;}
+.ghost .type-item {background-color: #bfa9cc;}
 .dragon {background-color: #AC9DDE;}
+.dragon .type-item {background-color: #8d7ebe;}
 .dark {background-color: #A59B99;}
+.dark .type-item {background-color: #948784;}
 .steel {background-color: #C4C9CD;}
+.steel .type-item {background-color: #a4aeb6;}
 .fairy {background-color: #F5CCDE;}
+.fairy .type-item {background-color: #ddb3c5;}
 .starter {background-color: #BAE0C9;}
+.starter .type-item {background-color: #9cc5ad;}
 .gimmick {background-color: #8ED0E0;}
+.gimmick .type-item {background-color: #79b7c7;}
 .legend {background-color: #CA7FDC;}
+.legend .type-item {background-color: #b770c9;}
 
 /*https://aminoapps.com/c/pokemon/page/blog/my-favorite-pokemon-of-every-type/lbhQ_uD6znGpPX788kRmJvvG4vEDog*/
